@@ -1,4 +1,3 @@
-
 FROM node:lts-buster
 
 RUN apt-get update && \
@@ -16,3 +15,5 @@ RUN npm install && npm install qrcode-terminal
 COPY . .
 
 EXPOSE 3000
+
+RUN npm run start
